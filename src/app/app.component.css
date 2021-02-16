@@ -14,3 +14,21 @@
   background: #7272f5;
   border-color: #7272f5;
 }
+
+#index-contour-bg {
+  background-image: url('../assets/img/topography-light.svg');
+  background-repeat: repeat;
+  margin-top: 0;
+  position: absolute;
+  z-index: -1;
+  height: 200vh;
+  width: 100%;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#000),
+    to(rgba(0, 0, 0, 0))
+  );
+  mask-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+}
